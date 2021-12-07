@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="loading"></div>
+    <div class="box">
+        <div class="gambar">
+            <img src="gambar/sma.jpg" alt="">
+        </div>
+        <div class="form">
+            <form action="proses_tambah.php" method="GET">
+                <tr>
+                    <td>Nomor UN SMP</td>
+                    <td><input type="text" class="text" name="no_un_smp"></td> <br>
+                </tr>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td><input type="text" class="text1" name="nama"></td> <br>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td><input type="radio" class="rd" name="kelamin" value="Pria">
+                        <label for="html">Pria</label>
+                        <input type="radio" class="rd2" id="css" name="kelamin" value="Wanita">
+                        <label for="css">Wanita</label><br>
+                    </td> <br>
+                </tr>
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td><input type="text" class="text3" name="tempat_lahir"></td> <br>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><input type="date" class="text4" name="tanggal_lahir"></td> <br>
+                </tr>
+                <tr>
+                    <td>Nama Orang Tua</td>
+                    <td><input type="text" class="text5" name="ortu"></td> <br> <br> <br>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea name="alamat" class="text6" cols="30" rows="5"></textarea></td> <br>
+                </tr>
+                <tr>
+                    <td>Kota / Kabupaten</td>
+                    <td><input type="text" class="text7" name="kota"></td> <br>
+                </tr>
+                <tr>
+                    <td>Nomor Telp / HP</td>
+                    <td><input type="text" class="text8" name="no_hp"></td> <br>
+                </tr>
+                <tr>
+                    <td>Asal Sekolah</td>
+                    <td><input type="text" class="text9" name="asal_sekolah"></td> <br>
+                </tr>
+                <tr>
+                    <td>Agama</td>
+                    <td><input type="text" class="text10" name="agama"></td> <br>
+                </tr>
+                <tr>
+                    <td><input type="submit" class="sbt" value="Register"></td>
+                </tr>
+            </form>
+        </div>
+    </div>
+    <script>
+        var loading = document.getElementById('loading');
+
+        window.addEventListener('load', function(){
+            loading.style.display = "none";
+        });
+    </script>
+</body>
+</html>

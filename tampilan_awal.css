@@ -1,0 +1,82 @@
+body{
+    background-color: #12151F;
+}
+#image{
+    padding: 10px 0 10px;
+    position: relative;
+    width: auto;
+}
+#image img {
+    width: auto;
+    height: 300px;
+    margin-left: 240px;
+    position: absolute;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+}
+/* -------------------------------------------------------------------------------------- */
+.judul h2{
+  text-align: center;
+  color: #05F4B7;
+  font-size: 50px;
+  margin-top: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* -------------------------------------------------------------------------------------- */
+div.gallery {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 450px;
+    border: 1px solid #ccc;
+    position: relative;
+    float: left;
+    width: 25%;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  /* -------------------------------------------------------------------------------------- */
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .gallery:hover img {
+    opacity: 0.3;
+  }
+  
+  .gallery:hover .middle {
+    opacity: 1;
+  }
+  
+  .text a {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 14px;
+    padding: 16px 32px;
+  }
+  .text a:hover{
+    color: red;
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="tampilan_awal.css">
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <script>
+        var i = 0;
+        $(document).ready(function(){
+            $('#image img').hide();
+            showNextImage();
+            setInterval('showNextImage()', 3000);
+        });
+        function showNextImage(){
+            i++;    
+            $('#sliderImage' + i).appendTo('#image').fadeIn(1100).delay(1100).fadeOut(1100);
+            if (i==4) {
+                i=0;
+            }
+        };
+    </script>
+    <title>Tampilan Awal</title>
+</head>
+<body>
+    <div id="image">
+        <img id="sliderImage1" src="gambar/Desain tanpa judul (1).png">
+
+        <img id="sliderImage2" src="gambar/Desain tanpa judul (2).png">
+
+        <img id="sliderImage3" src="gambar/Desain tanpa judul (3).png">
+
+        <img id="sliderImage4" src="gambar/Desain tanpa judul (4).png">
+    </div>
+    <div class="judul">
+      <h2>TAMPILAN MENU</h2>
+    </div>
+    <div class="gallery">
+      <img src="gambar/Desain tanpa judul (5).png" alt="Northern Lights" width="600" height="400">
+      <div class="middle">
+        <div class="text"><a href="form_registrasi.html">Registrasi</a></div>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

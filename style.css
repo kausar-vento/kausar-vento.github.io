@@ -1,0 +1,84 @@
+body{
+    background-color: #2C6ED5;
+}
+#loading{
+    width: 50px;
+    height: 50px;
+    border: solid 5px #ccc;
+    border-top-color: #ff6a00;
+    border-radius: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    animation: putar 2s linear infinite;
+}
+@keyframes putar{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.box{
+    width: 54%;
+    height: 100%;
+    background-color: white;
+    display: blok;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border: 5px solid;
+    color: black;
+    border-radius: 15px;
+}
+.gambar{
+    width: 101%;
+    display: blok;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.form, form, tr, td, input{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.text{
+    margin-left: 100px;
+}
+.text1{
+    margin-left: 110px;
+}
+.rd{
+    margin-left: 117px;
+}
+.rd2{
+    margin-left: 80;
+}
+.text3{
+    margin-left: 120px;
+}
+.text4{
+    margin-left: 116px;
+}
+.text5{
+    margin-left: 96px;
+}
+.text6{
+    margin-left: 159px;
+}
+.text7{
+    margin-left: 90px;
+}
+.text8{
+    margin-left: 94px;
+}
+.text9{
+    margin-left: 119px;
+}
+.text10{
+    margin-left: 157px;
+}
+.sbt{
+    margin-left: 440px;
+}
